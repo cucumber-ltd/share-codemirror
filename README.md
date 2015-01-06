@@ -17,9 +17,12 @@ shareDoc.attachCodeMirrorCursor(cm, ctx);
 
 That's it. You now have 2-way sync between your ShareJS and CodeMirror.
 
-### Configuration
+### Cursors Configuration
 
-The `attachCodeMirrorCursor` takes an optional 3rd `options` argument where the
+TODO: Re-implement this:
+https://github.com/share/ShareJS/compare/ea8eebdc9ba87840f9626b300118b988cd42330b...94dd9e0659c9b6953ba888f5dde8ce223a71f2ec
+
+The `attachCodeMirrorCursor` function takes an optional 3rd `options` argument where the
 following options may be set:
 
 * `inactiveTimeout` - how long the "name" part of a cursor is visible after inactivity
@@ -98,6 +101,10 @@ open coverage/lcov-report/index.html
 ```
 
 ## Release process
+
+```
+npm outdated --depth 0 # See if you can upgrade something
+```
 
 * Modify version in `bower.json` (not in `package.json`)
 * Update `History.md`

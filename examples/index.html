@@ -47,7 +47,7 @@
 
     var bcs = new BCSocket(null, {reconnect: true});
     var sjs = new window.sharejs.Connection(bcs);
-    sjs.debug = false;
+    sjs.debug = true;
 
     var doc = sjs.get('users', 'sephx');
 
